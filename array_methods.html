@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array Methods</title>
+	<style>
+		#container {
+			width: 100%;
+			max-width: 1600px; 
+			margin: 0 auto; 
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>JavaScript Array Methods Implentation</h1>
+		<h5>length</h5>
+		<button onclick="lengthFun()">Array length</button>
+		<p id="length_p">["Lorry", "Bus", "Motor cycle"]</p>
+
+		<h5>toString() Function</h5>
+		<button onclick="toStringFun()">Array to string</button>
+		<p id="string_p">["Lorry", "Bus", "Motor cycle"]</p>
+
+		<h5>join() Function</h5>
+        <button onclick="joinFun()">Join array</button>
+		<p id="join_p">["Lorry", "Bus", "Motor cycle"]</p>
+
+		<h5>pop() Function</h5>
+		<button onclick="popFun()">Array pop</button>
+		<p id="pop_p">[234, 898, 900]</p>
+
+		<h5>shift() Function</h5>
+        <button onclick="shiftFun()">Array shift</button>
+		<p id="shift_p">["Lorry", "Bus", "Motor cycle"]</p>
+	</div>
+
+	<script>
+		function lengthFun() {
+            var vehicles = ["Lorry", "Bus", "Motor cycle"];
+            let size = vehicles.length;
+            document.getElementById("length_p").innerHTML = size;
+            
+		}
+
+		function toStringFun() {
+            var vehicles = ["Lorry", "Bus", "Motor cycle"];
+            document.getElementById("string_p").innerHTML = vehicles.toString();
+		}
+
+        function joinFun() {
+		    var vehicles = ["Lorry", "Bus", "Motor cycle"];
+            document.getElementById("join_p").innerHTML = vehicles.join(" * ");
+		}
+
+        function popFun() {
+		    var numbers = [234, 898, 900];
+            document.getElementById("pop_p").innerHTML = numbers.pop();
+		}
+
+        function shiftFun() {
+            var vehicles = ["Lorry", "Bus", "Motor cycle"];
+            document.getElementById("shift_p").innerHTML = vehicles.shift();
+		}
+		
+	</script>
+</body>	
+</html>	

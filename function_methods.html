@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Function Methods</title>
+	<style>
+		#container {
+			width: 100%;
+			max-width: 1600px; 
+			margin: 0 auto; 
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>JavaScript Function Methods Implentation</h1>
+		<h5>Function as a variable</h5>
+		<!-- <p id="cel_p">60 fahrenheit</p> -->
+
+		<h5>Self-Invoking Functions</h5>
+		
+	</div>
+
+	<script>
+        let text = "The temperature is " + toCelsius(60) + " Celsius.";
+
+        console.log(text)
+        // document.getElementById("cel_p").innerHTML = text;
+
+        function toCelsius(fahrenheit) {
+            return (5/9) * (fahrenheit - 32);
+        } 
+
+		(function() {
+            var string0 = "Hello there";
+            console.log(string0);
+        })(); 
+
+	</script>
+</body>	
+</html>

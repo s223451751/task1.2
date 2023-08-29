@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive web design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+		box-sizing: border-box;
+		}
+
+		.left {
+			background-color: #2196F3;
+			padding: 20px;
+			float: left;
+			width: 20%; /* The width is 20%, by default */
+		}
+
+		.main {
+			background-color: #f1f1f1;
+			padding: 20px;
+			float: left;
+			width: 60%; /* The width is 60%, by default */
+		}
+
+		.image{
+			width: 100%;
+			height: 40vh;
+		}
+
+		.right {
+			background-color: #04AA6D;
+			padding: 20px;
+			float: left;
+			width: 20%; /* The width is 20%, by default */
+		}
+
+		/* Use a media query to add a break point at 800px: */
+		@media screen and (max-width: 800px) {
+			.left, .main, .right {
+				width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Responsive web design</h2>
+	<p>Adjsut the browser window.</p>
+
+	<div class="left">
+		<img src="download (1).jpg" alt="" class="image">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nunc vel libero 
+		</p>
+	</div>
+
+	<div class="main">
+		<img src="download.jpg" alt="" class="image">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nunc vel libero accumsan, ut bibendum ligula suscipit. Nulla facilisi. Vestibulum quis interdum justo, ut tempus arcu. Vivamus malesuada, quam in posuere laoreet, quam dolor fermentum elit, sit amet finibus dui lorem ut ante.
+		</p>
+	</div>
+
+	<div class="right">
+		<img src="download (1).jpg" alt="" class="image">
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique nunc vel libero 
+		</p>
+	</div>
+
+</body>
+</html>
+

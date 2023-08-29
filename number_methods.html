@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Number Methods</title>
+	<style>
+		#container {
+			width: 100%;
+			max-width: 1600px; 
+			margin: 0 auto; 
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>JavaScript Number Methods Implentation</h1>
+		<h5>toFixed() Function</h5>
+		<button onclick="toFixedFun()">Round to two decimals</button>
+		<p id="tofixed_p">3.144758</p>
+
+		<h5>toPrecision() Function</h5>
+		<button onclick="toPrecisionFun()">Precision</button>
+		<p id="precision_p">6.458</p>
+
+		<h5>valueOf() Function</h5>
+        <button onclick="valueOfFun()">Get value of </button>
+		<p id="valueof_p">254</p>
+
+		<h5>Number() Function</h5>
+		<button onclick="numberFun()">Convert string to number</button>
+		<p id="number_p">"254"</p>
+
+		<h5>parseInt() Function</h5>
+        <button onclick="parseIntFun()">Convert float to integer</button>
+		<p id="parseint_p">142.25</p>
+	</div>
+
+	<script>
+		function toFixedFun() {
+		    let num = parseFloat(document.getElementById("tofixed_p").innerHTML);
+            document.getElementById("tofixed_p").innerHTML =
+            num.toFixed(2) + "<br>" 
+		}
+
+		function toPrecisionFun() {
+		  let p_num = parseFloat(document.getElementById("precision_p").innerHTML);
+		  document.getElementById("precision_p").innerHTML =
+		  p_num.toPrecision(2);
+		}
+
+        function valueOfFun() {
+		  let p_num = parseFloat(document.getElementById("valueof_p").innerHTML);
+		  document.getElementById("valueof_p").innerHTML =
+		  p_num.valueOf();
+		}
+
+        function numberFun() {
+		  document.getElementById("number_p").innerHTML = Number("254");
+		}
+
+        function parseIntFun() {
+		  let p_num = 142.25;
+		  //let p_num = parseFloat(document.getElementById("valueof_p").innerHTML);
+		  document.getElementById("parseint_p").innerHTML = parseInt(p_num);
+		}
+		
+	</script>
+</body>
+</html>
+		

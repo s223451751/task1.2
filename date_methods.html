@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Date Methods</title>
+	<style>
+		#container {
+			width: 100%;
+			max-width: 1600px; 
+			margin: 0 auto; 
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="main-container">
+		<h1>JavaScript Date Methods Implentation</h1>
+		<h5>new Date() Function</h5>
+		<button onclick="newDatefun()">Get current date</button>
+		<p id="new_date_p"></p>
+
+		<h5>getHours() Function</h5>
+		<button onclick="getHrsFun()">Current number of hours today</button>
+		<p id="hours_p"></p>
+
+		<h5>getFullYear() Function</h5>
+        <button onclick="getFullYr()">Get current year</button>
+		<p id="fullyear_p"></p>
+
+		<h5>getMonth() Function</h5>
+		<button onclick="getMonthFun()">Get current month</button>
+		<p id="getmonth_p"></p>
+
+		<h5>getDate() Function</h5>
+        <button onclick="getdatefun()">Current Day of Month</button>
+		<p id="getdate_p"></p>
+	</div>
+
+	<script>
+		function newDatefun() {
+            const date0 = new Date();
+            document.getElementById("new_date_p").innerHTML = date0;
+		}
+
+		function getHrsFun() {
+            const p_num = new Date();
+            
+            document.getElementById("hours_p").innerHTML = p_num.getHours();
+		}
+
+        function getFullYr() {
+		    let p_num = new Date();
+		    document.getElementById("fullyear_p").innerHTML = p_num.getFullYear();
+		}
+
+        function getMonthFun() {
+            let p_num = new Date();
+		    document.getElementById("getmonth_p").innerHTML = p_num.getMonth();
+		}
+
+        function getdatefun() {
+            let p_num = new Date();
+		    document.getElementById("getdate_p").innerHTML = p_num.getDate();
+		}
+		
+	</script>
+</body>	
+</html>	

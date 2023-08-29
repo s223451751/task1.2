@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>String Methods</title>
+	<style>
+		#container {
+			width: 100%;
+			max-width: 1600px; 
+			margin: 0 auto; 
+			height: 80vh;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>JavaScript String Methods Implentation</h1>
+		<h5>toLowerCase Function</h5>
+		<button onclick="toLowerCaseFun()">To lower case</button>
+		<p id="lowercase_p">HELLO THERE!</p>
+
+		<h5>toUpperCase() Function</h5>
+		<button onclick="toUpperCaseFun()">To upper case</button>
+		<p id="uppercase_p">hello there!</p>
+
+		<h5>concat() Function</h5>
+		<p id="concat_p">Concatenate Introduction to and Javascript </p>
+		<button onclick="concateFun()">String concatenation</button>
+
+		<h5>padStart() Function</h5>
+		<p id="pad_p">135</p>
+		<button onclick="pedFun()">Pad text</button>
+
+		<h5>padEnd() Function</h5>
+		<p id="padend_p">135</p>
+		<button onclick="pedendFun()">Pad end</button>
+	</div>
+
+	<script>
+		function toLowerCaseFun() {
+		  let text = document.getElementById("lowercase_p").innerHTML;
+		  document.getElementById("lowercase_p").innerHTML =
+		  text.toLowerCase();
+		}
+
+		function toUpperCaseFun() {
+		  let text = document.getElementById("uppercase_p").innerHTML;
+		  document.getElementById("uppercase_p").innerHTML =
+		  text.toUpperCase();
+		}
+
+		
+
+		
+		function concateFun() {
+			let text1 = "Introduction to ";
+			let text2 = "Javascript";
+			let text3 = text1.concat(" ",text2);
+			document.getElementById("concat_p").innerHTML = text3;
+		}
+
+		function pedendFun() {
+			let text = "135";
+			document.getElementById("padend_p").innerHTML = text.padEnd(4, "0");
+		}
+
+		function pedFun() {
+			let text = "135";
+			document.getElementById("pad_p").innerHTML = text.padStart(4, "0");
+		}
+	</script>
+</body>
+</html>
